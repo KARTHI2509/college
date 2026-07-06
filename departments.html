@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Departments | Apex University</title>
+    
+    <meta name="description" content="Browse our academic departments including Computer Science, ECE, EEE, AI & ML, Civil, and Management divisions at Apex University.">
+    
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/><path d="M4.15 12.23L12 16.5l7.85-4.27v3.23L12 19.75l-7.85-4.29v-3.23z"/></svg>
+                <span>Apex University</span>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item mega-menu-item">
+                    <a href="about.html" class="nav-link">About <span style="font-size:0.6rem">▼</span></a>
+                    <div class="mega-menu">
+                        <div>
+                            <h4 class="mega-menu-title">Who We Are</h4>
+                            <ul class="mega-menu-list">
+                                <li><a href="about.html">History & Milestones</a></li>
+                                <li><a href="about.html#vision">Vision & Mission</a></li>
+                                <li><a href="about.html#leadership">Leadership Messages</a></li>
+                                <li><a href="about.html#accreditations">Accreditations & Ranking</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="mega-menu-title">Academics</h4>
+                            <ul class="mega-menu-list">
+                                <li><a href="courses.html">Find a Course</a></li>
+                                <li><a href="departments.html">Academic Departments</a></li>
+                                <li><a href="research.html">Research Centers</a></li>
+                                <li><a href="scholarships.html">Scholarship Programs</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="mega-menu-title">Campus Life</h4>
+                            <ul class="mega-menu-list">
+                                <li><a href="campus-life.html">Housing & Hostels</a></li>
+                                <li><a href="campus-life.html#facilities">Library & Sports</a></li>
+                                <li><a href="gallery.html">Photo & Video Gallery</a></li>
+                                <li><a href="testimonials.html">Student Testimonials</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="mega-menu-title">Connect</h4>
+                            <ul class="mega-menu-list">
+                                <li><a href="contact.html">Campus Directory</a></li>
+                                <li><a href="events.html">Upcoming Events</a></li>
+                                <li><a href="news.html">News & Circulars</a></li>
+                                <li><a href="faq.html">Admissions FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="admissions.html" class="nav-link">Admissions</a></li>
+                <li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
+                <li class="nav-item"><a href="placements.html" class="nav-link">Placements</a></li>
+                <li class="nav-item"><a href="faculty.html" class="nav-link">Faculty</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-switch" aria-label="Toggle dark mode">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </button>
+                <a href="login.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.85rem">Portal</a>
+                <button class="mobile-menu-toggle" aria-label="Open navigation menu">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay">
+        <div class="mobile-nav-header">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/><path d="M4.15 12.23L12 16.5l7.85-4.27v3.23L12 19.75l-7.85-4.29v-3.23z"/></svg>
+                <span>Apex University</span>
+            </a>
+            <button class="mobile-nav-close" aria-label="Close navigation menu">&times;</button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+            <li><a href="admissions.html" class="mobile-nav-link">Admissions</a></li>
+            <li><a href="courses.html" class="mobile-nav-link">Courses</a></li>
+            <li><a href="departments.html" class="mobile-nav-link">Departments</a></li>
+            <li><a href="faculty.html" class="mobile-nav-link">Faculty</a></li>
+            <li><a href="placements.html" class="mobile-nav-link">Placements</a></li>
+            <li><a href="campus-life.html" class="mobile-nav-link">Campus Life</a></li>
+            <li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
+            <li><a href="events.html" class="mobile-nav-link">Events</a></li>
+            <li><a href="news.html" class="mobile-nav-link">News</a></li>
+            <li><a href="research.html" class="mobile-nav-link">Research</a></li>
+            <li><a href="scholarships.html" class="mobile-nav-link">Scholarships</a></li>
+            <li><a href="testimonials.html" class="mobile-nav-link">Testimonials</a></li>
+            <li><a href="faq.html" class="mobile-nav-link">FAQ</a></li>
+            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+            <li><a href="login.html" class="mobile-nav-link">Login</a></li>
+            <li><a href="register.html" class="mobile-nav-link">Register</a></li>
+        </ul>
+    </div>
+
+    <!-- Page Hero Header -->
+    <header class="page-hero">
+        <div class="page-hero-container">
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Home</a></li>
+                <li>Academics</li>
+                <li>Departments</li>
+            </ul>
+            <h1>Academic Departments</h1>
+            <p style="max-width: 600px; color: var(--text-secondary)">Discover the curriculum, advanced labs, ongoing projects, and faculty of our core academic centers.</p>
+        </div>
+    </header>
+
+    <!-- Search box -->
+    <section class="section" style="padding-bottom: 20px">
+        <div class="container">
+            <div class="form-group" style="max-width: 500px; margin: 0 auto; width:100%">
+                <input type="text" id="dept-search-input" placeholder="Search departments by keyword (e.g. Mechanical, AI, Commerce)..." class="form-control">
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments Grid Layout with Tabs inside each -->
+    <section class="section" style="padding-top: 40px">
+        <div class="container">
+            <div style="display: flex; flex-direction: column; gap: 40px;">
+
+                <!-- Department 1: Computer Science & Engineering -->
+                <div class="card department-card tabs-parent reveal-fade-up" style="padding: 40px; display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 40px;">
+                    <div>
+                        <div class="section-tag">School of Tech</div>
+                        <h3 class="department-name" style="font-size:1.75rem; margin-bottom: 12px; color: var(--color-primary)">Computer Science & Engineering</h3>
+                        <p class="department-desc" style="color:var(--text-secondary); font-size:0.95rem; margin-bottom: 20px">The largest division at Apex, specializing in Machine Learning, Cloud Services, and Distributed Networks.</p>
+                        <a href="faculty.html" class="btn btn-secondary" style="font-size:0.85rem">View CSE Faculty</a>
+                    </div>
+                    <div>
+                        <div class="tabs-header">
+                            <button class="tab-btn active" data-tab="cse-overview">Overview</button>
+                            <button class="tab-btn" data-tab="cse-labs">Research & Labs</button>
+                            <button class="tab-btn" data-tab="cse-projects">Key Projects</button>
+                        </div>
+                        <div class="tab-content active" id="cse-overview">
+                            <p style="color: var(--text-secondary); font-size: 0.95rem">Our CSE department offers standard course structures designed under ACM guidelines. Students gain skills in Compiler Design, OS kernels, Full-stack web technologies, and Big Data processing algorithms.</p>
+                        </div>
+                        <div class="tab-content" id="cse-labs">
+                            <p style="color: var(--text-secondary); font-size: 0.95rem"><strong>Supercomputing Wing:</strong> Houses 12 high-performance cluster servers.<br><strong>Nvidia AI Innovation Lab:</strong> Equipped with RTX GPUs to process Deep Learning computer vision training datasets.</p>
+                        </div>
+                        <div class="tab-content" id="cse-projects">
+                            <p style="color: var(--text-secondary); font-size: 0.95rem"><strong>Agri-Sense:</strong> IoT sensor array mapping soil humidity in local villages using Drone imagery.<br><strong>SecureChain:</strong> Decentralized document verification protocol for university transcript records.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Department 2: Electronics & Communication -->
+                <div class="card department-card tabs-parent reveal-fade-up" style="padding: 40px; display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 40px;">
+                    <div>
+                        <div class="section-tag">School of Tech</div>
+                        <h3 class="department-name" style="font-size:1.75rem; margin-bottom: 12px; color: var(--color-primary)">Electronics & Communication (ECE)</h3>
+                        <p class="department-desc" style="color:var(--text-secondary); font-size:0.95rem; margin-bottom: 20px">Fostering expertise in VLSI, IoT devices, signal processing, and telecommunication hardware.</p>
+                        <a href="faculty.html" class="btn btn-secondary" style="font-size:0.85rem">View ECE Faculty</a>
+                    </div>
+                    <div>
+                        <div class="tabs-header">
+                            <button class="tab-btn active" data-tab="ece-overview">Overview</button>
+                            <button class="tab-btn" data-tab="ece-labs">Research & Labs</button>
+                            <button class="tab-btn" data-tab="ece-projects">Key Projects</button>
+                        </div>
+                        <div class="tab-content active" id="ece-overview">
+                            <p style="color: var(--text-secondary); font-size: 0.95rem">The ECE curriculum targets embedded logic circuits, cellular communications, fiber optics, and microprocessor architectures. Practical lab work constitutes 40% of the syllabus.</p>
+                        </div>
+                        <div class="tab-content" id="ece-labs">
+                            <p style="color: var(--text-secondary); font-size: 0.95rem"><strong>VLSI Circuitry Lab:</strong> Equipped with Cadence design suites.<br><strong>Antenna Testing Lab:</strong> RF chamber for measuring transmission frequencies up to 5GHz.</p>
+                        </div>
+                        <div class="tab-content" id="ece-projects">
+                            <p style="color: var(--text-secondary); font-size: 0.95rem"><strong>Bio-Band:</strong> Wearable biosensor tracking heart rate telemetry transmitting alerts to nearby doctors via Bluetooth.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Department 3: Business Management -->
+                <div class="card department-card tabs-parent reveal-fade-up" style="padding: 40px; display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 40px;">
+                    <div>
+                        <div class="section-tag">School of Business</div>
+                        <h3 class="department-name" style="font-size:1.75rem; margin-bottom: 12px; color: var(--color-primary)">Management & Business Administration</h3>
+                        <p class="department-desc" style="color:var(--text-secondary); font-size:0.95rem; margin-bottom: 20px">Training analytical business leaders for Finance, Operations, Strategy, and Digital Transformation.</p>
+                        <a href="faculty.html" class="btn btn-secondary" style="font-size:0.85rem">View MBA Faculty</a>
+                    </div>
+                    <div>
+                        <div class="tabs-header">
+                            <button class="tab-btn active" data-tab="mgmt-overview">Overview</button>
+                            <button class="tab-btn" data-tab="mgmt-labs">Research & Labs</button>
+                            <button class="tab-btn" data-tab="mgmt-projects">Key Projects</button>
+                        </div>
+                        <div class="tab-content active" id="mgmt-overview">
+                            <p style="color: var(--text-secondary); font-size: 0.95rem">The Management school focuses heavily on case study methodologies, corporate board simulations, financial market analytics, and executive communication models.</p>
+                        </div>
+                        <div class="tab-content" id="mgmt-labs">
+                            <p style="color: var(--text-secondary); font-size: 0.95rem"><strong>Financial Markets Lab:</strong> Real-time trading terminals simulation matching NASDAQ pricing ticker data feeds.</p>
+                        </div>
+                        <div class="tab-content" id="mgmt-projects">
+                            <p style="color: var(--text-secondary); font-size: 0.95rem"><strong>MarketPulse:</strong> Strategic advisory survey mapping e-commerce adoption indicators across suburban retail networks.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/><path d="M4.15 12.23L12 16.5l7.85-4.27v3.23L12 19.75l-7.85-4.29v-3.23z"/></svg>
+                    <span>Apex University</span>
+                </a>
+                <p class="footer-desc">Fostering excellence, innovation, and leadership in students since 1985. Join a global community of innovators and scholars.</p>
+                <div class="footer-socials">
+                    <a href="#" class="footer-social-icon" aria-label="Facebook">FB</a>
+                    <a href="#" class="footer-social-icon" aria-label="Twitter">TW</a>
+                    <a href="#" class="footer-social-icon" aria-label="LinkedIn">LN</a>
+                    <a href="#" class="footer-social-icon" aria-label="Instagram">IG</a>
+                </div>
+            </div>
+            <div class="footer-links-col">
+                <h4 class="footer-links-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Apex</a></li>
+                    <li><a href="admissions.html">Admission Guide</a></li>
+                    <li><a href="placements.html">Career & Placements</a></li>
+                    <li><a href="research.html">Research Projects</a></li>
+                    <li><a href="scholarships.html">Scholarship Offers</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h4 class="footer-links-title">Departments</h4>
+                <ul class="footer-links">
+                    <li><a href="departments.html">Computer Science</a></li>
+                    <li><a href="departments.html">Engineering</a></li>
+                    <li><a href="departments.html">Management</a></li>
+                    <li><a href="departments.html">Arts & Humanities</a></li>
+                    <li><a href="departments.html">Science & ECE</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4 class="footer-links-title">Newsletter</h4>
+                <p class="footer-desc" style="margin-bottom:8px">Get academic calendar updates and campus event circulars.</p>
+                <form class="footer-newsletter-form" data-validate>
+                    <div style="flex:1; margin-bottom: 0" class="form-group">
+                        <input type="email" placeholder="Your Email Address" required class="form-control" style="background-color: var(--bg-card)">
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="padding:10px 16px">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Apex University. All rights reserved. Made for professional delivery.</p>
+            <div class="footer-bottom-links">
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Help Desk</a>
+                <a href="login.html">Portal Access</a>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Scroll back to top">▲</button>
+
+    <!-- JS Imports -->
+    <script src="js/theme.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

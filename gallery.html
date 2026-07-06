@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo & Video Gallery | Apex University</title>
+    
+    <meta name="description" content="View the vibrant campus environment, lab structures, sports milestones, and student events at Apex University.">
+    
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/><path d="M4.15 12.23L12 16.5l7.85-4.27v3.23L12 19.75l-7.85-4.29v-3.23z"/></svg>
+                <span>Apex University</span>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item mega-menu-item">
+                    <a href="about.html" class="nav-link">About <span style="font-size:0.6rem">▼</span></a>
+                    <div class="mega-menu">
+                        <div>
+                            <h4 class="mega-menu-title">Who We Are</h4>
+                            <ul class="mega-menu-list">
+                                <li><a href="about.html">History & Milestones</a></li>
+                                <li><a href="about.html#vision">Vision & Mission</a></li>
+                                <li><a href="about.html#leadership">Leadership Messages</a></li>
+                                <li><a href="about.html#accreditations">Accreditations & Ranking</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="mega-menu-title">Academics</h4>
+                            <ul class="mega-menu-list">
+                                <li><a href="courses.html">Find a Course</a></li>
+                                <li><a href="departments.html">Academic Departments</a></li>
+                                <li><a href="research.html">Research Centers</a></li>
+                                <li><a href="scholarships.html">Scholarship Programs</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="mega-menu-title">Campus Life</h4>
+                            <ul class="mega-menu-list">
+                                <li><a href="campus-life.html">Housing & Hostels</a></li>
+                                <li><a href="campus-life.html#facilities">Library & Sports</a></li>
+                                <li><a href="gallery.html">Photo & Video Gallery</a></li>
+                                <li><a href="testimonials.html">Student Testimonials</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="mega-menu-title">Connect</h4>
+                            <ul class="mega-menu-list">
+                                <li><a href="contact.html">Campus Directory</a></li>
+                                <li><a href="events.html">Upcoming Events</a></li>
+                                <li><a href="news.html">News & Circulars</a></li>
+                                <li><a href="faq.html">Admissions FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="admissions.html" class="nav-link">Admissions</a></li>
+                <li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
+                <li class="nav-item"><a href="placements.html" class="nav-link">Placements</a></li>
+                <li class="nav-item"><a href="faculty.html" class="nav-link">Faculty</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-switch" aria-label="Toggle dark mode">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </button>
+                <a href="login.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.85rem">Portal</a>
+                <button class="mobile-menu-toggle" aria-label="Open navigation menu">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay">
+        <div class="mobile-nav-header">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/><path d="M4.15 12.23L12 16.5l7.85-4.27v3.23L12 19.75l-7.85-4.29v-3.23z"/></svg>
+                <span>Apex University</span>
+            </a>
+            <button class="mobile-nav-close" aria-label="Close navigation menu">&times;</button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+            <li><a href="admissions.html" class="mobile-nav-link">Admissions</a></li>
+            <li><a href="courses.html" class="mobile-nav-link">Courses</a></li>
+            <li><a href="departments.html" class="mobile-nav-link">Departments</a></li>
+            <li><a href="faculty.html" class="mobile-nav-link">Faculty</a></li>
+            <li><a href="placements.html" class="mobile-nav-link">Placements</a></li>
+            <li><a href="campus-life.html" class="mobile-nav-link">Campus Life</a></li>
+            <li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
+            <li><a href="events.html" class="mobile-nav-link">Events</a></li>
+            <li><a href="news.html" class="mobile-nav-link">News</a></li>
+            <li><a href="research.html" class="mobile-nav-link">Research</a></li>
+            <li><a href="scholarships.html" class="mobile-nav-link">Scholarships</a></li>
+            <li><a href="testimonials.html" class="mobile-nav-link">Testimonials</a></li>
+            <li><a href="faq.html" class="mobile-nav-link">FAQ</a></li>
+            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+            <li><a href="login.html" class="mobile-nav-link">Login</a></li>
+            <li><a href="register.html" class="mobile-nav-link">Register</a></li>
+        </ul>
+    </div>
+
+    <!-- Page Hero Header -->
+    <header class="page-hero">
+        <div class="page-hero-container">
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Home</a></li>
+                <li>Gallery</li>
+            </ul>
+            <h1>Campus Media Gallery</h1>
+            <p style="max-width: 600px; color: var(--text-secondary)">A visual tour of our research spaces, athletic arenas, and student projects.</p>
+        </div>
+    </header>
+
+    <!-- Filter Buttons & Gallery Grid -->
+    <section class="section">
+        <div class="container">
+            <!-- Category buttons -->
+            <div class="gallery-filter-buttons">
+                <button class="btn btn-secondary gallery-category-btn active" data-filter="all">All Media</button>
+                <button class="btn btn-secondary gallery-category-btn" data-filter="campus">Campus Grounds</button>
+                <button class="btn btn-secondary gallery-category-btn" data-filter="labs">Academic Labs</button>
+                <button class="btn btn-secondary gallery-category-btn" data-filter="sports">Sports Events</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- Item 1: Campus -->
+                <div class="gallery-item" data-category="campus">
+                    <svg viewBox="0 0 300 300" style="background: linear-gradient(135deg, #1e3a8a, #3b82f6); display:block; width:100%">
+                        <circle cx="150" cy="150" r="60" fill="none" stroke="#fff" stroke-width="2" opacity="0.3"/>
+                        <polygon points="120,100 220,150 120,200" fill="#fff" opacity="0.5"/>
+                    </svg>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-category">Campus</div>
+                        <h4 class="gallery-item-title">Main Academic Building Wing</h4>
+                    </div>
+                </div>
+
+                <!-- Item 2: Labs -->
+                <div class="gallery-item" data-category="labs">
+                    <svg viewBox="0 0 300 300" style="background: linear-gradient(135deg, #0f172a, #1e293b); display:block; width:100%">
+                        <rect x="50" y="50" width="200" height="200" rx="10" fill="none" stroke="#fff" stroke-width="2" opacity="0.2"/>
+                        <path d="M100 150h100M150 100v100" stroke="var(--color-success)" stroke-width="4" opacity="0.5"/>
+                    </svg>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-category">Labs</div>
+                        <h4 class="gallery-item-title">Smart Robotic Arms Station</h4>
+                    </div>
+                </div>
+
+                <!-- Item 3: Sports -->
+                <div class="gallery-item" data-category="sports">
+                    <svg viewBox="0 0 300 300" style="background: linear-gradient(135deg, #064e3b, #059669); display:block; width:100%">
+                        <circle cx="150" cy="150" r="80" fill="none" stroke="#fff" stroke-dasharray="10" stroke-width="2" opacity="0.3"/>
+                        <circle cx="150" cy="150" r="30" fill="#fff" opacity="0.5"/>
+                    </svg>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-category">Sports</div>
+                        <h4 class="gallery-item-title">Annual Athletics Sprint Run</h4>
+                    </div>
+                </div>
+
+                <!-- Item 4: Campus -->
+                <div class="gallery-item" data-category="campus">
+                    <svg viewBox="0 0 300 300" style="background: linear-gradient(135deg, #312e81, #1e1b4b); display:block; width:100%">
+                        <polygon points="150,50 50,250 250,250" fill="none" stroke="#fff" stroke-width="2" opacity="0.3"/>
+                    </svg>
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-category">Campus</div>
+                        <h4 class="gallery-item-title">Green Lawn Avenue pathways</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal container -->
+    <div class="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <button class="lightbox-prev">&#10094;</button>
+        <div class="lightbox-content">
+            <img src="" class="lightbox-img" alt="Enlarged campus view">
+            <div class="lightbox-caption">Loading...</div>
+        </div>
+        <button class="lightbox-next">&#10095;</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/><path d="M4.15 12.23L12 16.5l7.85-4.27v3.23L12 19.75l-7.85-4.29v-3.23z"/></svg>
+                    <span>Apex University</span>
+                </a>
+                <p class="footer-desc">Fostering excellence, innovation, and leadership in students since 1985. Join a global community of innovators and scholars.</p>
+                <div class="footer-socials">
+                    <a href="#" class="footer-social-icon" aria-label="Facebook">FB</a>
+                    <a href="#" class="footer-social-icon" aria-label="Twitter">TW</a>
+                    <a href="#" class="footer-social-icon" aria-label="LinkedIn">LN</a>
+                    <a href="#" class="footer-social-icon" aria-label="Instagram">IG</a>
+                </div>
+            </div>
+            <div class="footer-links-col">
+                <h4 class="footer-links-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Apex</a></li>
+                    <li><a href="admissions.html">Admission Guide</a></li>
+                    <li><a href="placements.html">Career & Placements</a></li>
+                    <li><a href="research.html">Research Projects</a></li>
+                    <li><a href="scholarships.html">Scholarship Offers</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h4 class="footer-links-title">Departments</h4>
+                <ul class="footer-links">
+                    <li><a href="departments.html">Computer Science</a></li>
+                    <li><a href="departments.html">Engineering</a></li>
+                    <li><a href="departments.html">Management</a></li>
+                    <li><a href="departments.html">Arts & Humanities</a></li>
+                    <li><a href="departments.html">Science & ECE</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4 class="footer-links-title">Newsletter</h4>
+                <p class="footer-desc" style="margin-bottom:8px">Get academic calendar updates and campus event circulars.</p>
+                <form class="footer-newsletter-form" data-validate>
+                    <div style="flex:1; margin-bottom: 0" class="form-group">
+                        <input type="email" placeholder="Your Email Address" required class="form-control" style="background-color: var(--bg-card)">
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="padding:10px 16px">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Apex University. All rights reserved. Made for professional delivery.</p>
+            <div class="footer-bottom-links">
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Help Desk</a>
+                <a href="login.html">Portal Access</a>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Scroll back to top">▲</button>
+
+    <!-- JS Imports -->
+    <script src="js/theme.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Apex University</title>
+    
+    <meta name="description" content="Discover the rich history, visionary mission, executive leadership messages, milestones timeline, and awards of Apex University.">
+    
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/><path d="M4.15 12.23L12 16.5l7.85-4.27v3.23L12 19.75l-7.85-4.29v-3.23z"/></svg>
+                <span>Apex University</span>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item mega-menu-item">
+                    <a href="about.html" class="nav-link active">About <span style="font-size:0.6rem">▼</span></a>
+                    <div class="mega-menu">
+                        <div>
+                            <h4 class="mega-menu-title">Who We Are</h4>
+                            <ul class="mega-menu-list">
+                                <li><a href="about.html">History & Milestones</a></li>
+                                <li><a href="about.html#vision">Vision & Mission</a></li>
+                                <li><a href="about.html#leadership">Leadership Messages</a></li>
+                                <li><a href="about.html#accreditations">Accreditations & Ranking</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="mega-menu-title">Academics</h4>
+                            <ul class="mega-menu-list">
+                                <li><a href="courses.html">Find a Course</a></li>
+                                <li><a href="departments.html">Academic Departments</a></li>
+                                <li><a href="research.html">Research Centers</a></li>
+                                <li><a href="scholarships.html">Scholarship Programs</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="mega-menu-title">Campus Life</h4>
+                            <ul class="mega-menu-list">
+                                <li><a href="campus-life.html">Housing & Hostels</a></li>
+                                <li><a href="campus-life.html#facilities">Library & Sports</a></li>
+                                <li><a href="gallery.html">Photo & Video Gallery</a></li>
+                                <li><a href="testimonials.html">Student Testimonials</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="mega-menu-title">Connect</h4>
+                            <ul class="mega-menu-list">
+                                <li><a href="contact.html">Campus Directory</a></li>
+                                <li><a href="events.html">Upcoming Events</a></li>
+                                <li><a href="news.html">News & Circulars</a></li>
+                                <li><a href="faq.html">Admissions FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="admissions.html" class="nav-link">Admissions</a></li>
+                <li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
+                <li class="nav-item"><a href="placements.html" class="nav-link">Placements</a></li>
+                <li class="nav-item"><a href="faculty.html" class="nav-link">Faculty</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-switch" aria-label="Toggle dark mode">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </button>
+                <a href="login.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.85rem">Portal</a>
+                <button class="mobile-menu-toggle" aria-label="Open navigation menu">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay">
+        <div class="mobile-nav-header">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/><path d="M4.15 12.23L12 16.5l7.85-4.27v3.23L12 19.75l-7.85-4.29v-3.23z"/></svg>
+                <span>Apex University</span>
+            </a>
+            <button class="mobile-nav-close" aria-label="Close navigation menu">&times;</button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+            <li><a href="admissions.html" class="mobile-nav-link">Admissions</a></li>
+            <li><a href="courses.html" class="mobile-nav-link">Courses</a></li>
+            <li><a href="departments.html" class="mobile-nav-link">Departments</a></li>
+            <li><a href="faculty.html" class="mobile-nav-link">Faculty</a></li>
+            <li><a href="placements.html" class="mobile-nav-link">Placements</a></li>
+            <li><a href="campus-life.html" class="mobile-nav-link">Campus Life</a></li>
+            <li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
+            <li><a href="events.html" class="mobile-nav-link">Events</a></li>
+            <li><a href="news.html" class="mobile-nav-link">News</a></li>
+            <li><a href="research.html" class="mobile-nav-link">Research</a></li>
+            <li><a href="scholarships.html" class="mobile-nav-link">Scholarships</a></li>
+            <li><a href="testimonials.html" class="mobile-nav-link">Testimonials</a></li>
+            <li><a href="faq.html" class="mobile-nav-link">FAQ</a></li>
+            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+            <li><a href="login.html" class="mobile-nav-link">Login</a></li>
+            <li><a href="register.html" class="mobile-nav-link">Register</a></li>
+        </ul>
+    </div>
+
+    <!-- Page Hero Header -->
+    <header class="page-hero">
+        <div class="page-hero-container">
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Home</a></li>
+                <li>About Us</li>
+            </ul>
+            <h1>Who We Are</h1>
+            <p style="max-width: 600px; color: var(--text-secondary)">A detailed look into the legacy, values, governance, and infrastructural achievements of Apex University.</p>
+        </div>
+    </header>
+
+    <!-- Leadership Messages Section -->
+    <section class="section" id="leadership">
+        <div class="container">
+            <!-- Chairman Message -->
+            <div class="principal-message-row reveal-fade-up" style="margin-bottom: 80px;">
+                <div>
+                    <!-- Reusable Avatar SVG -->
+                    <svg viewBox="0 0 200 240" style="background-color: var(--bg-secondary); border-radius: var(--radius-lg); display:block; width:100%">
+                        <circle cx="100" cy="90" r="50" fill="var(--color-secondary)"/>
+                        <path d="M40 200c0-30 30-40 60-40s60 10 60 40v20H40v-20z" fill="var(--color-primary)"/>
+                    </svg>
+                </div>
+                <div class="message-content">
+                    <div class="section-tag">Executive Board</div>
+                    <h2>Message from the Chairman</h2>
+                    <span style="font-weight: 700; color: var(--color-accent)">Dr. Stephen K. Vance</span>
+                    <blockquote>
+                        "True education must liberate the mind and prepare students to build, create, and inspire. At Apex, we construct spaces where innovation is expected and scientific exploration is the standard of learning."
+                    </blockquote>
+                    <p style="color: var(--text-secondary)">Our board focuses heavily on internationalizing our research labs, partnering with Silicon Valley companies, and funding student innovation center hubs. We invite you to join our growing global family.</p>
+                </div>
+            </div>
+
+            <!-- Principal Message -->
+            <div class="principal-message-row reveal-fade-up">
+                <div class="message-content" style="order: 2">
+                    <div class="section-tag">Academic Office</div>
+                    <h2>Message from the Principal</h2>
+                    <span style="font-weight: 700; color: var(--color-accent)">Prof. Evelyn Richardson</span>
+                    <blockquote>
+                        "We believe in nurturing high-integrity professionals. Our standards of course evaluations, coding challenges, and field research are designed to make you industry-resilient."
+                    </blockquote>
+                    <p style="color: var(--text-secondary)">Beyond classroom learning, our students engage in active community development through NSS and NCC programs, sports championships, and research publication groups. We guide your roadmap at every junction.</p>
+                </div>
+                <div style="order: 1">
+                    <svg viewBox="0 0 200 240" style="background-color: var(--bg-secondary); border-radius: var(--radius-lg); display:block; width:100%">
+                        <circle cx="100" cy="90" r="50" fill="var(--color-accent)"/>
+                        <path d="M40 200c0-30 30-40 60-40s60 10 60 40v20H40v-20z" fill="var(--color-primary)"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section class="section section-bg" id="vision">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+                <div class="card reveal-slide-left" style="padding: 40px;">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 16px; color: var(--color-secondary)">Our Vision</h3>
+                    <p style="color: var(--text-secondary)">To be recognized globally as a center of teaching innovation, empowering scholars of diverse backgrounds to create impactful technical, social, and commercial systems for a sustainable tomorrow.</p>
+                </div>
+                <div class="card reveal-slide-right" style="padding: 40px;">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 16px; color: var(--color-accent)">Our Mission</h3>
+                    <p style="color: var(--text-secondary)">To provide standard student experiences via standard curricula, state-of-the-art laboratory infrastructure, active industry internship opportunities, and deep research support systems under ethical guidelines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline of College History -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header reveal-fade-up">
+                <div class="section-tag">Milestones</div>
+                <h2 class="section-title">Apex History & Timeline</h2>
+                <p class="section-subtitle">A journey of dedication, expansion, and national accolades since 1985.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-container timeline-left reveal-slide-left">
+                    <div class="timeline-content">
+                        <span style="font-weight: 800; color: var(--color-accent); font-size:1.2rem">1985</span>
+                        <h4 style="margin: 8px 0">University Foundations</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem">Apex opened doors with 3 undergraduate programs in Science, Engineering, and Commerce with 120 enrolled scholars.</p>
+                    </div>
+                </div>
+                <div class="timeline-container timeline-right reveal-slide-right">
+                    <div class="timeline-content">
+                        <span style="font-weight: 800; color: var(--color-accent); font-size:1.2rem">1998</span>
+                        <h4 style="margin: 8px 0">Master's Division Launched</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem">Inaugurated postgraduate studies and set up the Central Library, housing over 50,000 reference manuals and scientific papers.</p>
+                    </div>
+                </div>
+                <div class="timeline-container timeline-left reveal-slide-left">
+                    <div class="timeline-content">
+                        <span style="font-weight: 800; color: var(--color-accent); font-size:1.2rem">2010</span>
+                        <h4 style="margin: 8px 0">Incubation Center Expansion</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem">Partnered with national funding agencies to sponsor student entrepreneurship. Built the Central Tech Labs wing.</p>
+                    </div>
+                </div>
+                <div class="timeline-container timeline-right reveal-slide-right">
+                    <div class="timeline-content">
+                        <span style="font-weight: 800; color: var(--color-accent); font-size:1.2rem">2026</span>
+                        <h4 style="margin: 8px 0">Ranked National Top 10</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem">Honored with NAAC A++ Grade accreditation and listed as NIRF Rank #8 National University for research quality.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infrastructure Accreditations & Awards -->
+    <section class="section section-bg" id="accreditations">
+        <div class="container">
+            <div class="section-header reveal-fade-up">
+                <div class="section-tag">Rankings</div>
+                <h2 class="section-title">Accreditations & Accolades</h2>
+                <p class="section-subtitle">We maintain top tier standards validated by national regulatory bodies.</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+                <div class="card card-hover reveal-fade-up" style="padding:32px; text-align:center">
+                    <div style="font-size:2rem; font-weight:800; color:var(--color-success); margin-bottom:12px">NAAC A++</div>
+                    <h4>Highest Accreditation Grade</h4>
+                    <p style="color: var(--text-secondary); font-size:0.9rem; margin-top:8px">Awarded for high-grade research facilities, faculty quality, and student placement rates.</p>
+                </div>
+                <div class="card card-hover reveal-fade-up delay-100" style="padding:32px; text-align:center">
+                    <div style="font-size:2rem; font-weight:800; color:var(--color-accent); margin-bottom:12px">NBA Accredited</div>
+                    <h4>Programs Endorsement</h4>
+                    <p style="color: var(--text-secondary); font-size:0.9rem; margin-top:8px">All core B.Tech engineering fields are accredited under the Washington Accord guidelines.</p>
+                </div>
+                <div class="card card-hover reveal-fade-up delay-200" style="padding:32px; text-align:center">
+                    <div style="font-size:2rem; font-weight:800; color:var(--color-secondary); margin-bottom:12px">NIRF Rank #8</div>
+                    <h4>Ranked by Ministry of Education</h4>
+                    <p style="color: var(--text-secondary); font-size:0.9rem; margin-top:8px">Listed within the top tier institutions of higher academic research across the nation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/><path d="M4.15 12.23L12 16.5l7.85-4.27v3.23L12 19.75l-7.85-4.29v-3.23z"/></svg>
+                    <span>Apex University</span>
+                </a>
+                <p class="footer-desc">Fostering excellence, innovation, and leadership in students since 1985. Join a global community of innovators and scholars.</p>
+                <div class="footer-socials">
+                    <a href="#" class="footer-social-icon" aria-label="Facebook">FB</a>
+                    <a href="#" class="footer-social-icon" aria-label="Twitter">TW</a>
+                    <a href="#" class="footer-social-icon" aria-label="LinkedIn">LN</a>
+                    <a href="#" class="footer-social-icon" aria-label="Instagram">IG</a>
+                </div>
+            </div>
+            <div class="footer-links-col">
+                <h4 class="footer-links-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Apex</a></li>
+                    <li><a href="admissions.html">Admission Guide</a></li>
+                    <li><a href="placements.html">Career & Placements</a></li>
+                    <li><a href="research.html">Research Projects</a></li>
+                    <li><a href="scholarships.html">Scholarship Offers</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h4 class="footer-links-title">Departments</h4>
+                <ul class="footer-links">
+                    <li><a href="departments.html">Computer Science</a></li>
+                    <li><a href="departments.html">Engineering</a></li>
+                    <li><a href="departments.html">Management</a></li>
+                    <li><a href="departments.html">Arts & Humanities</a></li>
+                    <li><a href="departments.html">Science & ECE</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4 class="footer-links-title">Newsletter</h4>
+                <p class="footer-desc" style="margin-bottom:8px">Get academic calendar updates and campus event circulars.</p>
+                <form class="footer-newsletter-form" data-validate>
+                    <div style="flex:1; margin-bottom: 0" class="form-group">
+                        <input type="email" placeholder="Your Email Address" required class="form-control" style="background-color: var(--bg-card)">
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="padding:10px 16px">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Apex University. All rights reserved. Made for professional delivery.</p>
+            <div class="footer-bottom-links">
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Help Desk</a>
+                <a href="login.html">Portal Access</a>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Scroll back to top">▲</button>
+
+    <!-- JS Imports -->
+    <script src="js/theme.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

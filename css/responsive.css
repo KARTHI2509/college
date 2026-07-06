@@ -1,0 +1,217 @@
+/* Responsive CSS Adaptations */
+
+/* Tablet & Smaller Laptops */
+@media (max-width: 1024px) {
+    :root {
+        --header-height: 70px;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .hero-content {
+        align-items: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.75rem;
+    }
+
+    .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .courses-grid, 
+    .features-grid, 
+    .events-grid, 
+    .news-grid,
+    .campus-life-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .faculty-grid, 
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+
+    .navbar-container {
+        padding: 0 16px;
+    }
+
+    /* Navbar Dropdowns for tablet */
+    .nav-menu {
+        display: none; /* Hide standard nav on tablet, handled by JS toggling mobile menu overlay */
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+}
+
+/* Mobile Screen Sizes */
+@media (max-width: 768px) {
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.25rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .courses-grid, 
+    .features-grid, 
+    .events-grid, 
+    .news-grid,
+    .campus-life-grid,
+    .faculty-grid, 
+    .gallery-grid,
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    .timeline-container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 24px;
+    }
+
+    .timeline-container::after {
+        left: 22px;
+    }
+
+    .timeline-right {
+        left: 0%;
+    }
+
+    .principal-message-row,
+    .placement-stats-row,
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .recruiters-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .footer-bottom-links {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .lightbox-prev, .lightbox-next {
+        width: 40px;
+        height: 40px;
+    }
+
+    .lightbox-prev { left: -48px; }
+    .lightbox-next { right: -48px; }
+}
+
+/* Landscape / Tiny Screen */
+@media (max-width: 480px) {
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+    .recruiters-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile Nav Overlay CSS */
+.mobile-nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-primary);
+    z-index: 1005;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity var(--transition-normal), transform var(--transition-normal), visibility var(--transition-normal);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.mobile-nav-overlay.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.mobile-nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.mobile-nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mobile-nav-link {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    display: block;
+}
+
+.mobile-nav-link:hover {
+    color: var(--color-accent);
+}

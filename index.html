@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex University | Excellence & Innovation</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Welcome to Apex University. Explore our world-class courses, outstanding research opportunities, placement highlights, and vibrant campus life.">
+    <meta name="keywords" content="University, College, Higher Education, Engineering, Management, Research, Placements, Apex University">
+    
+    <!-- CSS imports -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Transparent Sticky Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/><path d="M4.15 12.23L12 16.5l7.85-4.27v3.23L12 19.75l-7.85-4.29v-3.23z"/></svg>
+                <span>Apex University</span>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item mega-menu-item">
+                    <a href="about.html" class="nav-link">About <span style="font-size:0.6rem">▼</span></a>
+                    <div class="mega-menu">
+                        <div>
+                            <h4 class="mega-menu-title">Who We Are</h4>
+                            <ul class="mega-menu-list">
+                                <li><a href="about.html">History & Milestones</a></li>
+                                <li><a href="about.html#vision">Vision & Mission</a></li>
+                                <li><a href="about.html#leadership">Leadership Messages</a></li>
+                                <li><a href="about.html#accreditations">Accreditations & Ranking</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="mega-menu-title">Academics</h4>
+                            <ul class="mega-menu-list">
+                                <li><a href="courses.html">Find a Course</a></li>
+                                <li><a href="departments.html">Academic Departments</a></li>
+                                <li><a href="research.html">Research Centers</a></li>
+                                <li><a href="scholarships.html">Scholarship Programs</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="mega-menu-title">Campus Life</h4>
+                            <ul class="mega-menu-list">
+                                <li><a href="campus-life.html">Housing & Hostels</a></li>
+                                <li><a href="campus-life.html#facilities">Library & Sports</a></li>
+                                <li><a href="gallery.html">Photo & Video Gallery</a></li>
+                                <li><a href="testimonials.html">Student Testimonials</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="mega-menu-title">Connect</h4>
+                            <ul class="mega-menu-list">
+                                <li><a href="contact.html">Campus Directory</a></li>
+                                <li><a href="events.html">Upcoming Events</a></li>
+                                <li><a href="news.html">News & Circulars</a></li>
+                                <li><a href="faq.html">Admissions FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="admissions.html" class="nav-link">Admissions</a></li>
+                <li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
+                <li class="nav-item"><a href="placements.html" class="nav-link">Placements</a></li>
+                <li class="nav-item"><a href="faculty.html" class="nav-link">Faculty</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-switch" aria-label="Toggle dark mode">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </button>
+                <a href="login.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.85rem">Portal</a>
+                <button class="mobile-menu-toggle" aria-label="Open navigation menu">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay">
+        <div class="mobile-nav-header">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/><path d="M4.15 12.23L12 16.5l7.85-4.27v3.23L12 19.75l-7.85-4.29v-3.23z"/></svg>
+                <span>Apex University</span>
+            </a>
+            <button class="mobile-nav-close" aria-label="Close navigation menu">&times;</button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+            <li><a href="admissions.html" class="mobile-nav-link">Admissions</a></li>
+            <li><a href="courses.html" class="mobile-nav-link">Courses</a></li>
+            <li><a href="departments.html" class="mobile-nav-link">Departments</a></li>
+            <li><a href="faculty.html" class="mobile-nav-link">Faculty</a></li>
+            <li><a href="placements.html" class="mobile-nav-link">Placements</a></li>
+            <li><a href="campus-life.html" class="mobile-nav-link">Campus Life</a></li>
+            <li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
+            <li><a href="events.html" class="mobile-nav-link">Events</a></li>
+            <li><a href="news.html" class="mobile-nav-link">News</a></li>
+            <li><a href="research.html" class="mobile-nav-link">Research</a></li>
+            <li><a href="scholarships.html" class="mobile-nav-link">Scholarships</a></li>
+            <li><a href="testimonials.html" class="mobile-nav-link">Testimonials</a></li>
+            <li><a href="faq.html" class="mobile-nav-link">FAQ</a></li>
+            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+            <li><a href="login.html" class="mobile-nav-link">Login</a></li>
+            <li><a href="register.html" class="mobile-nav-link">Register</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg-visual"></div>
+        <div class="hero-circle-1" style="top: 10%; left: 10%"></div>
+        <div class="hero-circle-2" style="bottom: 10%; right: 10%"></div>
+        <div class="hero-container">
+            <div class="hero-content reveal-fade-up">
+                <div class="hero-badge">
+                    <span></span> NIRF Rank #8 National University
+                </div>
+                <h1>Empowering the Next Generation of <span class="animated-gradient-text" data-words='["Innovators", "Leaders", "Engineers", "Creators"]' class="typing-effect">Leaders</span></h1>
+                <p>Apex University provides world-class educational structures, groundbreaking research hubs, and dynamic industry collaborations to turn ambitious minds into global success stories.</p>
+                <div class="hero-actions">
+                    <a href="admissions.html" class="btn btn-primary">Apply Now 2026</a>
+                    <button class="btn btn-secondary" data-modal-target="#tour-modal">Virtual Campus Tour</button>
+                </div>
+            </div>
+            <div class="hero-media-wrapper reveal-zoom">
+                <div class="hero-card-preview">
+                    <div>
+                        <div style="font-family:var(--font-heading); font-size:1.5rem; font-weight:800; color:#fff; margin-bottom:12px">Admissions Open</div>
+                        <div style="font-size:0.9rem; color:#cbd5e1">Secure your seat in Engineering, Management, and Science programs. Priority deadlines approaching.</div>
+                    </div>
+                    <div style="border-top:1px solid rgba(255,255,255,0.1); padding-top:16px; display:flex; justify-content:space-between; align-items:center">
+                        <span style="font-size:0.8rem; color:#94a3b8">Term starts September 2026</span>
+                        <a href="admissions.html" style="font-size:0.9rem; color:var(--color-accent); font-weight:700">Learn More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Statistics Counters Section -->
+    <section class="section section-bg">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal-fade-up">
+                    <div class="stat-num counter-val" data-target="150" data-suffix="+">0</div>
+                    <div class="stat-label">Faculty Ph.D. Scholars</div>
+                </div>
+                <div class="stat-item reveal-fade-up delay-100">
+                    <div class="stat-num counter-val" data-target="98" data-suffix="%">0</div>
+                    <div class="stat-label">Placement Record</div>
+                </div>
+                <div class="stat-item reveal-fade-up delay-200">
+                    <div class="stat-num counter-val" data-target="15000" data-suffix="+">0</div>
+                    <div class="stat-label">Alumni Network</div>
+                </div>
+                <div class="stat-item reveal-fade-up delay-300">
+                    <div class="stat-num counter-val" data-target="45" data-suffix="M+">0</div>
+                    <div class="stat-label">Research Grants Funded</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Introduction Section -->
+    <section class="section">
+        <div class="container">
+            <div class="intro-grid">
+                <div class="reveal-slide-left">
+                    <div class="section-tag">About Apex</div>
+                    <h2 class="section-title">A Legacy of Academic Brilliance and Research</h2>
+                    <p style="color:var(--text-secondary); margin-bottom:20px">Established in 1985, Apex University has stood at the forefront of learning and impact. Located across a sprawling 150-acre green campus, we offer standard curriculum, state-of-the-art laboratory systems, and tie-ups with Top 100 global organizations.</p>
+                    <p style="color:var(--text-secondary); margin-bottom:24px">Our mission goes beyond textbooks: we cultivate high-character global leaders capable of addressing the complex technical, ethical, and socio-economic struggles of tomorrow.</p>
+                    <a href="about.html" class="btn btn-secondary">Read Our History</a>
+                </div>
+                <div class="intro-media reveal-slide-right">
+                    <!-- Standard high quality SVG Illustration of campus building layout -->
+                    <svg viewBox="0 0 500 350" style="background: linear-gradient(135deg, #1E3A8A, #3B82F6)">
+                        <rect x="50" y="220" width="400" height="80" fill="#1e293b" opacity="0.9"/>
+                        <rect x="70" y="100" width="360" height="120" fill="#334155"/>
+                        <polygon points="50,100 250,30 450,100" fill="#0f172a"/>
+                        <!-- Pillars -->
+                        <rect x="90" y="120" width="20" height="100" fill="#94a3b8"/>
+                        <rect x="150" y="120" width="20" height="100" fill="#94a3b8"/>
+                        <rect x="210" y="120" width="20" height="100" fill="#94a3b8"/>
+                        <rect x="270" y="120" width="20" height="100" fill="#94a3b8"/>
+                        <rect x="330" y="120" width="20" height="100" fill="#94a3b8"/>
+                        <rect x="390" y="120" width="20" height="100" fill="#94a3b8"/>
+                        <!-- Center Shield -->
+                        <circle cx="250" cy="70" r="16" fill="#f59e0b"/>
+                        <path d="M246 64h8v12h-8z" fill="#0f172a"/>
+                    </svg>
+                    <div class="intro-stats-badge">
+                        <div class="intro-stats-num">120+</div>
+                        <div style="font-size:0.85rem; color:var(--text-secondary)">Research publications<br>published this year</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section section-bg">
+        <div class="container">
+            <div class="section-header reveal-fade-up">
+                <div class="section-tag">Why Apex</div>
+                <h2 class="section-title">Designed for Holistic Career Development</h2>
+                <p class="section-subtitle">We merge top-tier classroom lessons with extensive off-site internships, clubs, and sports programs.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card card-hover reveal-fade-up">
+                    <div class="feature-icon-wrapper">
+                        <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/><path d="M4.15 12.23L12 16.5l7.85-4.27v3.23L12 19.75l-7.85-4.29v-3.23z"/></svg>
+                    </div>
+                    <h3>Global Accreditations</h3>
+                    <p style="color:var(--text-secondary); font-size:0.95rem">Recognized globally by top commissions ensuring your credentials have international value wherever you go.</p>
+                </div>
+                <div class="feature-card card-hover reveal-fade-up delay-100">
+                    <div class="feature-icon-wrapper">
+                        <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                    </div>
+                    <h3>Mentoring by Experts</h3>
+                    <p style="color:var(--text-secondary); font-size:0.95rem">Our professors hold doctorates from leading universities and bring years of relevant scientific experience.</p>
+                </div>
+                <div class="feature-card card-hover reveal-fade-up delay-200">
+                    <div class="feature-icon-wrapper">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                    </div>
+                    <h3>Innovative Incubation</h3>
+                    <p style="color:var(--text-secondary); font-size:0.95rem">Student startups get dedicated space, expert legal mentoring, and access to seed funding pools up to $50,000.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Courses Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header reveal-fade-up">
+                <div class="section-tag">Programs</div>
+                <h2 class="section-title">Our Featured Courses</h2>
+                <p class="section-subtitle">Curated to meet the evolving tech demands of modern business sectors.</p>
+            </div>
+            <div class="courses-grid">
+                <div class="card course-card card-hover reveal-fade-up">
+                    <div class="img-hover-container">
+                        <!-- SVG placeholder for tech course image -->
+                        <svg viewBox="0 0 350 200" class="img-hover-zoom" style="background: linear-gradient(135deg, #1e293b, #0f172a); display:block">
+                            <text x="50%" y="50%" fill="#fff" dominant-baseline="middle" text-anchor="middle" font-family="var(--font-heading)" font-size="1.2rem" font-weight="700">Computer Science & AI</text>
+                        </svg>
+                    </div>
+                    <div class="course-body">
+                        <div>
+                            <div class="course-meta">
+                                <span>4 Years</span>
+                                <span>8 Semesters</span>
+                            </div>
+                            <h3 class="course-title">B.Tech in Artificial Intelligence & ML</h3>
+                            <ul class="course-info-list">
+                                <li><strong>Seats:</strong> 120 Seats</li>
+                                <li><strong>Eligibility:</strong> 10+2 with 60% in PCM</li>
+                            </ul>
+                        </div>
+                        <div class="course-footer">
+                            <span class="course-price">$8,500 <span style="font-size:0.75rem; color:var(--text-muted)">/ Year</span></span>
+                            <a href="admissions.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.85rem">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card course-card card-hover reveal-fade-up delay-100">
+                    <div class="img-hover-container">
+                        <svg viewBox="0 0 350 200" class="img-hover-zoom" style="background: linear-gradient(135deg, #1e3a8a, #1d4ed8); display:block">
+                            <text x="50%" y="50%" fill="#fff" dominant-baseline="middle" text-anchor="middle" font-family="var(--font-heading)" font-size="1.2rem" font-weight="700">Business & Analytics</text>
+                        </svg>
+                    </div>
+                    <div class="course-body">
+                        <div>
+                            <div class="course-meta">
+                                <span>2 Years</span>
+                                <span>4 Semesters</span>
+                            </div>
+                            <h3 class="course-title">MBA in Data Analytics</h3>
+                            <ul class="course-info-list">
+                                <li><strong>Seats:</strong> 60 Seats</li>
+                                <li><strong>Eligibility:</strong> Graduation with 55%</li>
+                            </ul>
+                        </div>
+                        <div class="course-footer">
+                            <span class="course-price">$12,000 <span style="font-size:0.75rem; color:var(--text-muted)">/ Year</span></span>
+                            <a href="admissions.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.85rem">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card course-card card-hover reveal-fade-up delay-200">
+                    <div class="img-hover-container">
+                        <svg viewBox="0 0 350 200" class="img-hover-zoom" style="background: linear-gradient(135deg, #064e3b, #059669); display:block">
+                            <text x="50%" y="50%" fill="#fff" dominant-baseline="middle" text-anchor="middle" font-family="var(--font-heading)" font-size="1.2rem" font-weight="700">Electronics & IoT</text>
+                        </svg>
+                    </div>
+                    <div class="course-body">
+                        <div>
+                            <div class="course-meta">
+                                <span>4 Years</span>
+                                <span>8 Semesters</span>
+                            </div>
+                            <h3 class="course-title">B.Tech in Electronics & IoT</h3>
+                            <ul class="course-info-list">
+                                <li><strong>Seats:</strong> 90 Seats</li>
+                                <li><strong>Eligibility:</strong> 10+2 with 60% in PCM</li>
+                            </ul>
+                        </div>
+                        <div class="course-footer">
+                            <span class="course-price">$8,000 <span style="font-size:0.75rem; color:var(--text-muted)">/ Year</span></span>
+                            <a href="admissions.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.85rem">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:48px">
+                <a href="courses.html" class="btn btn-secondary">Explore All Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Placement Highlights Section -->
+    <section class="section section-bg">
+        <div class="container">
+            <div class="placement-stats-row">
+                <div class="reveal-slide-left">
+                    <div class="section-tag">Careers</div>
+                    <h2 class="section-title">Industry Placements That Inspire</h2>
+                    <p style="color:var(--text-secondary); margin-bottom:20px">Our Placement Cell operates year-round to match students with high-growth organizations. With mock interviews, resume bootcamps, and direct campus recruitment, we guarantee a flying start to your corporate journey.</p>
+                    <div style="display:flex; gap:24px; margin-top:24px">
+                        <div>
+                            <div style="font-size:2.25rem; font-weight:800; color:var(--color-accent)">$48.5 LPA</div>
+                            <div style="font-size:0.85rem; color:var(--text-secondary)">Highest Package Offered</div>
+                        </div>
+                        <div>
+                            <div style="font-size:2.25rem; font-weight:800; color:var(--color-secondary)">$9.2 LPA</div>
+                            <div style="font-size:0.85rem; color:var(--text-secondary)">Average Package Value</div>
+                        </div>
+                    </div>
+                    <a href="placements.html" class="btn btn-primary" style="margin-top:32px">View Placement Reports</a>
+                </div>
+                <div class="reveal-slide-right">
+                    <h3 style="margin-bottom:24px">Our Top Hiring Recruiters</h3>
+                    <div class="recruiters-grid">
+                        <div class="recruiter-logo">
+                            <!-- SVG logo mock -->
+                            <svg viewBox="0 0 100 40"><text x="50%" y="60%" font-size="20" font-weight="900" text-anchor="middle" dominant-baseline="middle">GOOGLE</text></svg>
+                        </div>
+                        <div class="recruiter-logo">
+                            <svg viewBox="0 0 100 40"><text x="50%" y="60%" font-size="20" font-weight="900" text-anchor="middle" dominant-baseline="middle">MICRO</text></svg>
+                        </div>
+                        <div class="recruiter-logo">
+                            <svg viewBox="0 0 100 40"><text x="50%" y="60%" font-size="20" font-weight="900" text-anchor="middle" dominant-baseline="middle">AMAZON</text></svg>
+                        </div>
+                        <div class="recruiter-logo">
+                            <svg viewBox="0 0 100 40"><text x="50%" y="60%" font-size="20" font-weight="900" text-anchor="middle" dominant-baseline="middle">META</text></svg>
+                        </div>
+                        <div class="recruiter-logo">
+                            <svg viewBox="0 0 100 40"><text x="50%" y="60%" font-size="20" font-weight="900" text-anchor="middle" dominant-baseline="middle">NETFLIX</text></svg>
+                        </div>
+                        <div class="recruiter-logo">
+                            <svg viewBox="0 0 100 40"><text x="50%" y="60%" font-size="20" font-weight="900" text-anchor="middle" dominant-baseline="middle">APPLE</text></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Slider Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header reveal-fade-up">
+                <div class="section-tag">Testimonials</div>
+                <h2 class="section-title">What Our Community Says</h2>
+                <p class="section-subtitle">Real feedback from students, proud alumni members, and parents.</p>
+            </div>
+            
+            <div class="carousel reveal-zoom">
+                <div class="carousel-track-container">
+                    <div class="carousel-track">
+                        <!-- Slide 1 -->
+                        <div class="carousel-slide" style="padding: 40px;">
+                            <div style="max-width:800px; margin:0 auto; text-align:center">
+                                <p style="font-size:1.3rem; font-style:italic; color:var(--text-secondary); margin-bottom:24px">"Apex University transformed my vision of computer engineering. The project-based learning model and coding labs allowed me to secure an internship at Microsoft before completing my degree. The coding community here is simply incredible!"</p>
+                                <h4 style="font-size:1.15rem; font-weight:700">Rahul Sharma</h4>
+                                <span style="font-size:0.85rem; color:var(--text-muted)">B.Tech CSE, Class of 2025</span>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-slide" style="padding: 40px;">
+                            <div style="max-width:800px; margin:0 auto; text-align:center">
+                                <p style="font-size:1.3rem; font-style:italic; color:var(--text-secondary); margin-bottom:24px">"As a parent, I wanted a university that ensures both safety and high academic challenge. Apex exceeds on both fronts. The career planning cell gave clear guidance and help on my daughter's startup idea."</p>
+                                <h4 style="font-size:1.15rem; font-weight:700">Mrs. Ananya Sen</h4>
+                                <span style="font-size:0.85rem; color:var(--text-muted)">Parent of Priya Sen (MBA Class of 2026)</span>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="carousel-slide" style="padding: 40px;">
+                            <div style="max-width:800px; margin:0 auto; text-align:center">
+                                <p style="font-size:1.3rem; font-style:italic; color:var(--text-secondary); margin-bottom:24px">"The focus on academic writing and research publications helped me publish two papers in reputed IEEE journals. I am now pursuing my Ph.D. at Stanford. Thank you to my incredible mentors at Apex!"</p>
+                                <h4 style="font-size:1.15rem; font-weight:700">Dr. James Carter</h4>
+                                <span style="font-size:0.85rem; color:var(--text-muted)">Alumni, Research Fellow</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn carousel-btn-prev" aria-label="Previous slide">&#10094;</button>
+                <button class="carousel-btn carousel-btn-next" aria-label="Next slide">&#10095;</button>
+                <div class="carousel-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Events Section -->
+    <section class="section section-bg">
+        <div class="container">
+            <div class="section-header reveal-fade-up">
+                <div class="section-tag">Campus News</div>
+                <h2 class="section-title">Latest Updates & Events</h2>
+                <p class="section-subtitle">Catch up with the recent happenings and major student workshops.</p>
+            </div>
+            <div class="news-grid">
+                <!-- News 1 -->
+                <div class="card card-hover reveal-fade-up">
+                    <svg viewBox="0 0 350 180" style="background-color:#1e293b; display:block">
+                        <text x="50%" y="50%" fill="#fff" dominant-baseline="middle" text-anchor="middle" font-family="var(--font-heading)" font-size="1.1rem">National Tech Summit 2026</text>
+                    </svg>
+                    <div class="news-card-body">
+                        <div class="news-date">July 10, 2026</div>
+                        <h3 style="font-size:1.2rem; margin-bottom:12px">Apex to host National Tech Summit and Hackathon</h3>
+                        <p style="color:var(--text-secondary); font-size:0.9rem; margin-bottom:16px">Over 500 developers from across India are expected to build solutions for sustainability and AI.</p>
+                        <a href="news.html" style="color:var(--color-accent); font-weight:600; font-size:0.9rem">Read Details &rarr;</a>
+                    </div>
+                </div>
+                <!-- News 2 -->
+                <div class="card card-hover reveal-fade-up delay-100">
+                    <svg viewBox="0 0 350 180" style="background-color:#1d4ed8; display:block">
+                        <text x="50%" y="50%" fill="#fff" dominant-baseline="middle" text-anchor="middle" font-family="var(--font-heading)" font-size="1.1rem">Ranked #1 for CSR Awards</text>
+                    </svg>
+                    <div class="news-card-body">
+                        <div class="news-date">June 28, 2026</div>
+                        <h3 style="font-size:1.2rem; margin-bottom:12px">Apex wins Prestigious Green Campus Award</h3>
+                        <p style="color:var(--text-secondary); font-size:0.9rem; margin-bottom:16px">Recognized for our 100kW solar plant installations and zero plastic recycling policies on campus.</p>
+                        <a href="news.html" style="color:var(--color-accent); font-weight:600; font-size:0.9rem">Read Details &rarr;</a>
+                    </div>
+                </div>
+                <!-- News 3 -->
+                <div class="card card-hover reveal-fade-up delay-200">
+                    <svg viewBox="0 0 350 180" style="background-color:#059669; display:block">
+                        <text x="50%" y="50%" fill="#fff" dominant-baseline="middle" text-anchor="middle" font-family="var(--font-heading)" font-size="1.1rem">MOU with IBM Research</text>
+                    </svg>
+                    <div class="news-card-body">
+                        <div class="news-date">June 15, 2026</div>
+                        <h3 style="font-size:1.2rem; margin-bottom:12px">Apex signs MoU with IBM Research Labs</h3>
+                        <p style="color:var(--text-secondary); font-size:0.9rem; margin-bottom:16px">Enables our Master's students to collaborate on Quantum Computing experiments with top scientists.</p>
+                        <a href="news.html" style="color:var(--color-accent); font-weight:600; font-size:0.9rem">Read Details &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Tour Video Modal Mock -->
+    <div class="modal-overlay" id="tour-modal">
+        <div class="modal-container">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <h3 style="font-size:1.5rem; margin-bottom:16px">Virtual Campus Tour</h3>
+            <!-- SVG Virtual map/video mock -->
+            <svg viewBox="0 0 500 280" style="background-color:#0b0f19; border-radius:var(--radius-md); display:block; margin-bottom:16px">
+                <rect x="0" y="0" width="100%" height="100%" fill="#0b0f19"/>
+                <!-- Play button graphic -->
+                <polygon points="230,120 230,160 270,140" fill="var(--color-accent)"/>
+                <circle cx="250" cy="140" r="30" fill="none" stroke="var(--color-accent)" stroke-width="2"/>
+                <text x="50%" y="80%" fill="#94a3b8" font-size="12" text-anchor="middle">Loading 4K drone footage stream...</text>
+            </svg>
+            <p style="color:var(--text-secondary); font-size:0.9rem">Experience our smart classrooms, fully stocked central library, computer labs, and green avenues from the comfort of your screen.</p>
+        </div>
+    </div>
+
+    <!-- Reusable Premium Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/><path d="M4.15 12.23L12 16.5l7.85-4.27v3.23L12 19.75l-7.85-4.29v-3.23z"/></svg>
+                    <span>Apex University</span>
+                </a>
+                <p class="footer-desc">Fostering excellence, innovation, and leadership in students since 1985. Join a global community of innovators and scholars.</p>
+                <div class="footer-socials">
+                    <a href="#" class="footer-social-icon" aria-label="Facebook">FB</a>
+                    <a href="#" class="footer-social-icon" aria-label="Twitter">TW</a>
+                    <a href="#" class="footer-social-icon" aria-label="LinkedIn">LN</a>
+                    <a href="#" class="footer-social-icon" aria-label="Instagram">IG</a>
+                </div>
+            </div>
+            <div class="footer-links-col">
+                <h4 class="footer-links-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Apex</a></li>
+                    <li><a href="admissions.html">Admission Guide</a></li>
+                    <li><a href="placements.html">Career & Placements</a></li>
+                    <li><a href="research.html">Research Projects</a></li>
+                    <li><a href="scholarships.html">Scholarship Offers</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h4 class="footer-links-title">Departments</h4>
+                <ul class="footer-links">
+                    <li><a href="departments.html">Computer Science</a></li>
+                    <li><a href="departments.html">Engineering</a></li>
+                    <li><a href="departments.html">Management</a></li>
+                    <li><a href="departments.html">Arts & Humanities</a></li>
+                    <li><a href="departments.html">Science & ECE</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4 class="footer-links-title">Newsletter</h4>
+                <p class="footer-desc" style="margin-bottom:8px">Get academic calendar updates and campus event circulars.</p>
+                <form class="footer-newsletter-form" data-validate>
+                    <div style="flex:1; margin-bottom: 0" class="form-group">
+                        <input type="email" placeholder="Your Email Address" required class="form-control" style="background-color: var(--bg-card)">
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="padding:10px 16px">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Apex University. All rights reserved. Made for professional delivery.</p>
+            <div class="footer-bottom-links">
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Help Desk</a>
+                <a href="login.html">Portal Access</a>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Scroll back to top">▲</button>
+
+    <!-- JS Scripts imports -->
+    <script src="js/theme.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
